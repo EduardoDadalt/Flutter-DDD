@@ -21,34 +21,45 @@ class ClienteTela extends StatelessWidget {
               },
             ),
             Text('ValorPesquisado: ${clienteBloc.valorPesquisa}'),
-            Expanded(
-              child: FutureBuilder<List<Cliente>>(
-                future: ClienteProvider.of(context).obterClientesFiltrados(),
-                builder: (context, snapshot) {
-                  if (snapshot.hasData) {
-                    final List<Cliente> clientes = snapshot.data!;
-                    return ListView.builder(
-                      itemBuilder: (context, index) => ClienteListaItem(
-                        cliente: clientes[index],
-                      ),
-                      itemCount: clientes.length,
-                    );
-                  } else if (snapshot.hasError) {
-                    return Center(
-                      child: Text(
-                        "Erro",
-                        style: Theme.of(context).textTheme.headline4,
-                      ),
-                    );
-                  }
-                  return const Center(
-                    child: CircularProgressIndicator(),
-                  );
-                },
-              ),
-            ),
+            const ListaDeClientes(),
           ],
         ));
+  }
+}
+
+class ListaDeClientes extends StatelessWidget {
+  const ListaDeClientes({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      child: FutureBuilder<List<Cliente>>(
+        future: ClienteProvider.of(context).obterClientesFiltrados(),
+        builder: (context, snapshot) {
+          if (snapshot.hasData) {
+            final List<Cliente> clientes = snapshot.data!;
+            return ListView.builder(
+              itemBuilder: (context, index) => ClienteListaItem(
+                cliente: clientes[index],
+              ),
+              itemCount: clientes.length,
+            );
+          } else if (snapshot.hasError) {
+            return Center(
+              child: Text(
+                "Erro",
+                style: Theme.of(context).textTheme.headline4,
+              ),
+            );
+          }
+          return const Center(
+            child: CircularProgressIndicator(),
+          );
+        },
+      ),
+    );
   }
 }
 

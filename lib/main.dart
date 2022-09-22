@@ -1,5 +1,5 @@
+import 'package:ddd_flutter/Cadastro/Cliente/Aplica%C3%A7%C3%A3o/cliente_rota.dart';
 import 'package:flutter/material.dart';
-import 'package:ddd_flutter/Cadastro/Cliente/Apresentacao/cliente_rota.dart';
 
 void main() {
   runApp(const MyApp());
