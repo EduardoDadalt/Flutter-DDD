@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import 'package:ddd_flutter/Feature/Cliente/Aplica%C3%A7%C3%A3o/cliente_bloc.dart';
+import 'package:ddd_flutter/Cadastro/Cliente/Aplica%C3%A7%C3%A3o/cliente_bloc.dart';
 
 class ClienteProvider extends InheritedNotifier<ClienteBloc> {
   const ClienteProvider(

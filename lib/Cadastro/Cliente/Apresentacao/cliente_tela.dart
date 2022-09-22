@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ddd_flutter/Feature/Cliente/Aplica%C3%A7%C3%A3o/cliente_bloc.dart';
-import 'package:ddd_flutter/Feature/Cliente/Aplica%C3%A7%C3%A3o/cliente_provider.dart';
-import 'package:ddd_flutter/Feature/Cliente/Dominio/Entidade/cliente_entidade.dart';
+import 'package:ddd_flutter/Cadastro/Cliente/Aplica%C3%A7%C3%A3o/cliente_bloc.dart';
+import 'package:ddd_flutter/Cadastro/Cliente/Aplica%C3%A7%C3%A3o/cliente_provider.dart';
+import 'package:ddd_flutter/Cadastro/Cliente/Dominio/Entidade/cliente_entidade.dart';
 
 class ClienteTela extends StatelessWidget {
   const ClienteTela({super.key});

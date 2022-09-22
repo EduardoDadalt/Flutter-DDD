@@ -1,5 +1,5 @@
-import 'package:ddd_flutter/Feature/Cliente/Dominio/Entidade/cliente_entidade.dart';
-import 'package:ddd_flutter/Feature/Cliente/Repositorio/datasource/i_cliente_datasource.dart';
+import 'package:ddd_flutter/Cadastro/Cliente/Dominio/Entidade/cliente_entidade.dart';
+import 'package:ddd_flutter/Cadastro/Cliente/Repositorio/datasource/i_cliente_datasource.dart';
 
 class ClienteRepositorio {
   ClienteRepositorio(this.clienteDatasource);

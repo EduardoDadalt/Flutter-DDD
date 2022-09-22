@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
-import 'package:ddd_flutter/Feature/Cliente/Dominio/Entidade/cliente_entidade.dart';
-import 'package:ddd_flutter/Feature/Cliente/Repositorio/cliente_repositorio.dart';
+import 'package:ddd_flutter/Cadastro/Cliente/Dominio/Entidade/cliente_entidade.dart';
+import 'package:ddd_flutter/Cadastro/Cliente/Repositorio/cliente_repositorio.dart';
 
 class ClienteBloc extends ChangeNotifier {
   ClienteBloc(this.clienteRepositorio);
