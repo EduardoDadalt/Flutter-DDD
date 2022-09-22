@@ -1,11 +1,10 @@
-import 'package:flutter/widgets.dart';
 import 'package:ddd_flutter/Cadastro/Cliente/Aplica%C3%A7%C3%A3o/cliente_bloc.dart';
 import 'package:ddd_flutter/Cadastro/Cliente/Apresentacao/cliente_tela.dart';
 import 'package:ddd_flutter/Cadastro/Cliente/Repositorio/cliente_repositorio.dart';
-import 'package:ddd_flutter/Cadastro/Cliente/Repositorio/datasource/i_cliente_datasource.dart';
 import 'package:ddd_flutter/Cadastro/Cliente/Repositorio/datasource/local_datasource.dart';
+import 'package:flutter/widgets.dart';
 
-import '../Aplicação/cliente_provider.dart';
+import 'cliente_provider.dart';
 
 class ClienteRota extends StatelessWidget {
   const ClienteRota({super.key});
