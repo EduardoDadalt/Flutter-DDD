@@ -12,10 +12,9 @@ class ClienteRota extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ClienteDatasource localClienteDatasource = LocalClienteDatasource();
-    final ClienteRepositorio clienteRepositorio =
-        ClienteRepositorio(localClienteDatasource);
-    final ClienteBloc clienteBloc = ClienteBloc(clienteRepositorio);
+    final localClienteDatasource = LocalClienteDatasource();
+    final clienteRepositorio = ClienteRepositorio(localClienteDatasource);
+    final clienteBloc = ClienteBloc(clienteRepositorio);
 
     return ClienteProvider(
       notifier: clienteBloc,
